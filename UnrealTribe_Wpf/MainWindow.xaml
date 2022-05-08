@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UnrealTribe_Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="UnrealTribe" Height="1080" Width="1920" ResizeMode="NoResize" WindowStyle="None" WindowState="Maximized">
+    <Grid Width="1920" Height="1080">
+        <Button x:Name="ExitBtn" Content="Exit" HorizontalAlignment="Left" Height="50" Margin="1860,10,0,0" VerticalAlignment="Top" Width="50" Click="ExitBtn_Click"/>
+        <Button x:Name="CalendarBtn" Content="Calendar" HorizontalAlignment="Left" Height="80" Margin="1760,112,0,0" VerticalAlignment="Top" Width="150" Click="CalendarBtn_Click"/>
+        <Button x:Name="InventoryBtn" Content="Inventory" HorizontalAlignment="Left" Height="80" Margin="1760,210,0,0" VerticalAlignment="Top" Width="150" Click="InventoryBtn_Click"/>
+        <Button x:Name="TribalInfoBtn" Content="Tribal Info" HorizontalAlignment="Left" Height="80" Margin="1760,312,0,0" VerticalAlignment="Top" Width="150" Click="TribalInfoBtn_Click"/>
+        <Button x:Name="ResearchesBtn" Content="Researches" HorizontalAlignment="Left" Height="80" Margin="1760,412,0,0" VerticalAlignment="Top" Width="150" Click="ResearchesBtn_Click"/>
+        <Button x:Name="StartMusicBtn" Content=" Start&#xD;&#xA;Music" HorizontalAlignment="Left" Height="50" Margin="1760,550,0,0" VerticalAlignment="Top" Width="60" IsEnabled="False" Click="StartMusicBtn_Click"/>
+        <Button x:Name="StopMusicBtn" Content=" Stop&#xA;Music" HorizontalAlignment="Left" Height="50" Margin="1848,550,0,0" VerticalAlignment="Top" Width="60" Click="StopMusicBtn_Click"/>
+        <Button x:Name="NextTurnBtn" Content="Next Turn" HorizontalAlignment="Left" Height="80" Margin="1760,990,0,0" VerticalAlignment="Top" Width="150" Click="NextTurnBtn_Click"/>
 
     </Grid>
 </Window>

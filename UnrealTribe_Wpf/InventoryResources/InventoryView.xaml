@@ -1,0 +1,21 @@
+﻿<Window x:Class="UnrealTribe_Wpf.InventoryResources.InventoryView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnrealTribe_Wpf.InventoryResources"
+        mc:Ignorable="d"
+        Title="InventoryView" Height="450" Width="800" Closing="Window_Closing" Deactivated="Window_Deactivated" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <ListView x:Name="InventoryItemsLv" Width="600" Margin="50,50,50,100" IsSynchronizedWithCurrentItem="True">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="SortByNameBtn" Content="Sort by name" HorizontalAlignment="Left" Height="50" Margin="100,369,0,0" VerticalAlignment="Top" Width="100" Click="SortByNameBtn_Click"/>
+        <Button x:Name="SortByWeightBtn" Content="Sort by weight" HorizontalAlignment="Left" Height="50" Margin="223,369,0,0" VerticalAlignment="Top" Width="100" Click="SortByWeightBtn_Click"/>
+
+    </Grid>
+</Window>

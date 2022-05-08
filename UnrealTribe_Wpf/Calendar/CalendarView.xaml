@@ -1,0 +1,24 @@
+﻿<Window x:Class="UnrealTribe_Wpf.Calendar.CalendarView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnrealTribe_Wpf.Calendar"
+        mc:Ignorable="d"
+        Title="CalendarView" Height="350" Width="500" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="JanuaryLb" Content="January" HorizontalAlignment="Left" Height="35" Margin="8,25,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="FebruaryLb_Copy" Content="February" HorizontalAlignment="Left" Height="35" Margin="136,25,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="MarchLb_Copy" Content="March" HorizontalAlignment="Left" Height="35" Margin="275,25,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="AprilLb_Copy" Content="April" HorizontalAlignment="Left" Height="35" Margin="402,25,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="MayLb_Copy" Content="May" HorizontalAlignment="Left" Height="35" Margin="402,106,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="JuneLb_Copy" Content="June" HorizontalAlignment="Left" Height="35" Margin="402,217,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="JulyLb_Copy" Content="July" HorizontalAlignment="Left" Height="35" Margin="402,296,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="AugustLb_Copy" Content="August" HorizontalAlignment="Left" Height="35" Margin="275,296,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="1.229,0.643" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="SeptemberLb_Copy" Content="September" HorizontalAlignment="Left" Height="35" Margin="136,296,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="OctoberLb_Copy" Content="October" HorizontalAlignment="Left" Height="35" Margin="8,296,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="NovemberLb_Copy" Content="November" HorizontalAlignment="Left" Height="35" Margin="8,217,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label x:Name="DecemberLb_Copy" Content="December" HorizontalAlignment="Left" Height="35" Margin="8,110,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Button x:Name="NextTurnBtn" Content="Next turn" HorizontalAlignment="Left" Height="82" Margin="171,0,0,0" VerticalAlignment="Center" Width="139" Click="NextTurnBtn_Click"/>
+    </Grid>
+</Window>
