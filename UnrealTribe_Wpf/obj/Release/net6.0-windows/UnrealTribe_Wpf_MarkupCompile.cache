@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Alex\source\repos\KiranitSS\UnrealTribe_Wpf\UnrealTribe_Wpf\obj\Debug\net6.0-windows\
+C:\Users\Alex\source\repos\KiranitSS\UnrealTribe_Wpf\UnrealTribe_Wpf\obj\Release\net6.0-windows\
 UnrealTribe_Wpf
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\Alex\source\repos\KiranitSS\UnrealTribe_Wpf\UnrealTribe_Wpf\App.xaml
 5-1680953097
 
