@@ -15,13 +15,13 @@ namespace UnrealTribe.TribeResources
 
         public Researches Reserches { get; }
 
-        public Inventory Inventory { get; }
+        public InventoryView InventoryView { get; }
 
         public Tribe()
         {
             this.TribalInfo = new TribeInfo();
             this.Reserches = new Researches();
-            this.Inventory = new Inventory();
+            this.InventoryView = new InventoryView();
         }
     }
 }

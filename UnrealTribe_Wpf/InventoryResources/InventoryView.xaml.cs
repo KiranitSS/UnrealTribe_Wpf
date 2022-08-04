@@ -28,7 +28,7 @@ namespace UnrealTribe_Wpf.InventoryResources
         public Inventory Inventory { get; }
         private readonly GridView inventoryView = new GridView();
 
-        public InventoryView()
+        public InventoryView()  
         {
             InitializeComponent();
 

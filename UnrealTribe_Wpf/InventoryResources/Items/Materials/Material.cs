@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnrealTribe.InventoryResources.Items
 {
-    public abstract class Material : Item
+    public abstract class Material : InventoryItem
     {
         protected Material() : base()
         {

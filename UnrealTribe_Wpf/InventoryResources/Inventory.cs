@@ -38,21 +38,17 @@ namespace UnrealTribe.InventoryResources
             }
         }
 
-        public InventoryView View { get; }
-
         public Inventory()
         {
             this.Items = new ObservableCollection<AdaptedToViewInventoryItem>();
-            this.View = new InventoryView();
         }
 
         public Inventory(ObservableCollection<AdaptedToViewInventoryItem> inventoryItems)
         {
             this.Items = inventoryItems;
-            this.View = new InventoryView();
         }
 
-        public void Add(Item item, int count)
+        public void Add(InventoryItem item, int count)
         {
             if (!this.Items.Any(i => i.Name == item.Name))
             {
@@ -64,7 +60,7 @@ namespace UnrealTribe.InventoryResources
             }
         }
 
-        public void Take(Item item, int count)
+        public void Take(InventoryItem item, int count)
         {
             if (this.Items.Any(i => i.Name == item.Name) || this[item.Name].Count < count)
             {
@@ -83,7 +79,7 @@ namespace UnrealTribe.InventoryResources
             }
         }
 
-        public List<Item> GetAllItems()
+        public List<InventoryItem> GetAllItems()
         {
             return this.Items.Select(i => i.Item).ToList();
         }

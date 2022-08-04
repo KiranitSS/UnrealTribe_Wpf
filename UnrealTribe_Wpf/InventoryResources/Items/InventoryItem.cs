@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace UnrealTribe.InventoryResources
 {
-    public abstract class Item
+    public abstract class InventoryItem
     {
         public string Name { get; protected set; }
         public float Weight { get; protected set; }
 
         public bool IsCountable { get; protected set; }
 
-        protected Item()
+        protected InventoryItem()
         {
             this.Name = string.Empty;
             this.Weight = 0;
         }
 
-        protected Item(string name, float weight)
+        protected InventoryItem(string name, float weight)
         {
             this.Name = name;
             this.Weight = weight;
@@ -37,7 +37,7 @@ namespace UnrealTribe.InventoryResources
                 return false;
             }
 
-            if (obj is Item item)
+            if (obj is InventoryItem item)
             {
                 return this.Name == item.Name && this.Weight == item.Weight && this.IsCountable == item.IsCountable;
             }

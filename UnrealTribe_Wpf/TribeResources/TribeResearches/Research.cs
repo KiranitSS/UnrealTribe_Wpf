@@ -12,10 +12,10 @@ namespace UnrealTribe.TribeResources.TribeResearches
         protected Research()
         {
             this.Name = string.Empty;
-            this.ItemsOnResearch = Array.Empty<Item>();
+            this.ItemsOnResearch = Array.Empty<InventoryItem>();
         }
 
-        protected Research(string name, int timeToComplite, Item[] itemsOnResearch)
+        protected Research(string name, int timeToComplite, InventoryItem[] itemsOnResearch)
         {
             this.Name = name;
             this.TurnsToComplite = timeToComplite;
@@ -27,7 +27,7 @@ namespace UnrealTribe.TribeResources.TribeResearches
         public int TurnsToComplite { get; protected set; }
         public int RemainingTurns { get; protected set; }
         
-        public Item[] ItemsOnResearch { get; protected set; }
+        public InventoryItem[] ItemsOnResearch { get; protected set; }
 
         public bool IsComplited { get; set; }
     }

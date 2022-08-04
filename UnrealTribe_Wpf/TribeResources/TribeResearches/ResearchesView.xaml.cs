@@ -39,29 +39,9 @@ namespace UnrealTribe_Wpf.TribeResources.TribeResearches
             this.farmingResearchesView = new ResearchesSectionView();
             this.militaryResearchesView = new ResearchesSectionView();
 
-            this.ConstructionResearchesImg.Source = ImageUtils.GetFromFile(this.currentDirectory + this.wayBack + this.targetFolder + "ConstructionResearches.png");
-            this.FarmingResearchesImg.Source = ImageUtils.GetFromFile(this.currentDirectory + this.wayBack + this.targetFolder + "FarmingResearches.png");
-            this.MilitaryResearchesImg.Source = ImageUtils.GetFromFile(this.currentDirectory + this.wayBack + this.targetFolder + "MilitaryResearches.png");
-        }
-
-        private void ResearchesView_Leave(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        private void ConstructionResearchesShowBtn_Click(object sender, EventArgs e)
-        {
-            this.ShowResearchesView(constructionResearchesView);
-        }
-
-        private void FarmingResearchesShowBtn_Click(object sender, EventArgs e)
-        {
-            this.ShowResearchesView(farmingResearchesView);
-        }
-
-        private void MilitaryResearchesShowBtn_Click(object sender, EventArgs e)
-        {
-            this.ShowResearchesView(militaryResearchesView);
+            this.ConstructionResearchesImg.Source = ImageUtils.GetFromFile(this.currentDirectory + this.wayBack + this.targetFolder + "ConstructionResearches.jpg");
+            this.FarmingResearchesImg.Source = ImageUtils.GetFromFile(this.currentDirectory + this.wayBack + this.targetFolder + "FarmingResearches1.jpg");
+            this.MilitaryResearchesImg.Source = ImageUtils.GetFromFile(this.currentDirectory + this.wayBack + this.targetFolder + "MilitaryResearches.jpg");
         }
 
         private void ShowResearchesView(ResearchesSectionView view)
@@ -77,6 +57,21 @@ namespace UnrealTribe_Wpf.TribeResources.TribeResearches
         {
             e.Cancel = true;
             this.Hide();
+        }
+
+        private void ConstructionBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.ShowResearchesView(constructionResearchesView);
+        }
+
+        private void FarmingBtn1_Click(object sender, RoutedEventArgs e)
+        {
+            this.ShowResearchesView(farmingResearchesView);
+        }
+
+        private void MilitaryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.ShowResearchesView(militaryResearchesView);
         }
     }
 }

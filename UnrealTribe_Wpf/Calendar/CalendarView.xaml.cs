@@ -13,9 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using UnrealTribe;
-using UnrealTribe.Turns;
 using UnrealTribe_Wpf.Utils;
 using UnrealTribe_Wpf.Extensions;
+using UnrealTribe.Controllers.Turns;
 
 namespace UnrealTribe_Wpf.Calendar
 {

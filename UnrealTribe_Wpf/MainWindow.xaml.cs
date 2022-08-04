@@ -13,12 +13,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 using UnrealTribe.MapResources;
 using UnrealTribe.TribeResources;
-using UnrealTribe.Turns;
+using UnrealTribe.Controllers.Turns;
 using UnrealTribe_Wpf.Calendar;
 using UnrealTribe_Wpf.Utils;
+using UnrealTribe_Wpf.Controllers.Music;
 
 namespace UnrealTribe_Wpf
 {
@@ -29,13 +29,12 @@ namespace UnrealTribe_Wpf
         private readonly static string backgroundImageName = "\\OldMapBackground.jpg";
         private readonly static string backgroundImageDir = Directory.GetCurrentDirectory() + wayBack + "\\Images\\Backgrounds";
 
-        private readonly static string backgroundTrackName = "\\Track1.wav";
-        private readonly static string backgroundTracksDir = Directory.GetCurrentDirectory() + wayBack + "\\Music";
+        private readonly static string backgroundTrackName = "Track1.wav";
 
         private CalendarView calendar;
         private Tribe tribe;
         private TurnsController turnsController;
-        private SoundPlayer? backSoundPlayer;
+        private BackgroundMusicPlayer backSoundPlayer;
 
         private readonly int mapHeight = 40;
         private readonly int mapWidth = 60;
@@ -53,6 +52,8 @@ namespace UnrealTribe_Wpf
             this.calendar = new CalendarView();
 
             this.turnsController = TurnsController.CreateNew();
+
+            this.backSoundPlayer = new BackgroundMusicPlayer();
 
             this.InitializeAdditionalComponents();
 
@@ -118,13 +119,12 @@ namespace UnrealTribe_Wpf
 
         private void SetBackgroundMusicTrack()
         {
-            this.backSoundPlayer = new SoundPlayer(backgroundTracksDir + backgroundTrackName);
-            this.backSoundPlayer.PlayLooping();
+            //this.backSoundPlayer.SetTrack(backgroundTrackName);
         }
 
         private void OnNearMapCellClick(object? sender, EventArgs e)
         {
-            this.tribe.Inventory.View.OnMapCellClicked(sender, e);
+            this.tribe.InventoryView.OnMapCellClicked(sender, e);
         }
 
         private void ShowCalendar()
@@ -138,10 +138,10 @@ namespace UnrealTribe_Wpf
 
         private void ShowTribeInventory()
         {
-            if (this.tribe.Inventory != null)
+            if (this.tribe.InventoryView != null)
             {
-                this.tribe.Inventory.View.Show();
-                this.tribe.Inventory.View.Activate();
+                this.tribe.InventoryView.Show();
+                this.tribe.InventoryView.Activate();
             }
         }
 

@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UnrealTribe_Wpf.TribeResources.TribeResearches"
         mc:Ignorable="d"
-        Title="ReasearchesView" Height="450" Width="800" Closing="Window_Closing">
-    <Grid>
+        Title="ReasearchesView" Height="450" Width="800" Closing="Window_Closing" ResizeMode="NoResize" WindowStyle="None">
+    <Grid x:Name="FarmingBtn">
         <Image x:Name="ConstructionResearchesImg" HorizontalAlignment="Left" Height="50" Margin="42,50,0,0" VerticalAlignment="Top" Width="180" OpacityMask="Black"/>
         <Image x:Name="FarmingResearchesImg" HorizontalAlignment="Left" Height="50" Margin="308,50,0,0" VerticalAlignment="Top" Width="180"/>
         <Image x:Name="MilitaryResearchesImg" HorizontalAlignment="Left" Height="50" Margin="590,50,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button x:Name="ConstructionBtn" Content="Construction" HorizontalAlignment="Left" Height="50" Margin="42,0,0,0" VerticalAlignment="Center" Width="180" Click="ConstructionBtn_Click"/>
+        <Button x:Name="FarmingBtn1" Content="Farming" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="180" Click="FarmingBtn1_Click"/>
+        <Button x:Name="MilitaryBtn" Content="Military" HorizontalAlignment="Left" Height="50" Margin="590,0,0,0" VerticalAlignment="Center" Width="180" Click="MilitaryBtn_Click"/>
 
     </Grid>
 </Window>

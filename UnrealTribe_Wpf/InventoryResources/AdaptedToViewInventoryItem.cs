@@ -11,7 +11,7 @@ namespace UnrealTribe_Wpf.InventoryResources
     {
         private int count;
 
-        public Item Item { get; }
+        public InventoryItem Item { get; }
 
         public string Name { get => Item.Name; }
 
@@ -33,7 +33,7 @@ namespace UnrealTribe_Wpf.InventoryResources
 
         public float TotalWeight { get; private set; }
 
-        public AdaptedToViewInventoryItem (Item item, int count = 1)
+        public AdaptedToViewInventoryItem (InventoryItem item, int count = 1)
         {
             this.Item = item;
             this.Count = count;

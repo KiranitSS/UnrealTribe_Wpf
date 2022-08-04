@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnrealTribe.InventoryResources.Items.FoodItems
 {
-    public abstract class Food : Item
+    public abstract class Food : InventoryItem
     {
         protected Food() : base()
         {
